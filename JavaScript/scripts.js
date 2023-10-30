@@ -1,14 +1,14 @@
-/* OBJETO */
+/* OBJETO PARA LOS VALORES A INGRESAR POR INPUT */
 const datos = {
     cantidad: '',
     categoria: ''
 };
 
-/* ASIGNO EL VALOR 'estudiante' */
+/* VALOR 'estudiante' PARA LA PRIMERA OPCION DEL SELECT */
 var categoria;
 datos.categoria = 'estudiante';
 
-/* ELEMENTOS HTML */
+/* OBTENGO ELEMENTOS DEL FORM */
 const cantidad = document.querySelector('#cantidad');
 categoria = document.querySelector('#categoria');
 const totalAPagar = document.querySelector('#totalAPagar');
@@ -27,7 +27,7 @@ categoria.addEventListener('change', function(event){
     console.log("Categoria: " + event.target.value + " guardada");
 });
 
-/* RESUMEN */
+/* BOTON RESUMEN */
 btnResumen.addEventListener('click' , function(event){
     event.preventDefault();
     const {cantidad, categoria} = datos;
@@ -51,7 +51,7 @@ btnResumen.addEventListener('click' , function(event){
     return;
 });
 
-/* BORRAR */
+/* BOTON BORRAR */
 btnBorrar.addEventListener('click' , function(event){
     event.preventDefault();
     var indice = 0;
